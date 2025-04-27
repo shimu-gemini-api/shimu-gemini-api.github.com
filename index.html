@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>【2025年全新】Gemini API服务中心 | 专业Google Gemini AI模型接口 - 简易 API中转站</title>
+    <meta name="description" content="简易 API提供专业Gemini API服务，支持Gemini 1.5 Pro、Gemini 1.5 Flash等全系列模型接口。国内直连稳定快速，低至50ms延迟，支持多语言开发，注册即送免费额度。Gemini API服务首选！">
+    <meta name="keywords" content="Gemini API,Google AI,Gemini 1.5,AI API,大模型API,Gemini Pro,Gemini接口,免费API额度,Google API">
+    <meta property="og:title" content="【2025专业】Gemini API服务中心 | Google AI大模型接口 - 简易 API">
+    <meta property="og:description" content="国内领先Gemini API服务，提供一站式Google AI大模型接口。国内直连稳定，支持Gemini 1.5系列所有先进模型！">
+    <meta property="og:url" content="https://jeniya.cn/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jeniya.cn/og-image.jpg">
+    <meta name="twitter:title" content="【2025专业】Gemini API服务中心 | Google AI大模型接口">
+    <meta name="twitter:description" content="国内领先Gemini API服务，提供一站式Google AI大模型接口。国内直连稳定，多语言支持！">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://jeniya.cn/twitter-image.jpg">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charSet="utf-8" />
+    <meta http-equiv='content-language' content='zh-CN'>
+    <link rel="icon" href="/google.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://jeniya.cn/">
+    <style>
+        :root {
+            --primary-color: #4285F4;
+            --secondary-color: #34A853;
+            --accent-color: #EA4335;
+            --dark-bg: #0d1117;          /* 更深的背景色 */
+            --medium-bg: #1a1a2e;        /* 中等背景色 */
+            --light-bg: #262643;         /* 较浅的背景色 */
+            --light-text: #f8f9fa;
+            --section-1-bg: #16213e;
+            --section-2-bg: #0f3460;
+            --section-3-bg: #2c2157;
+            --section-4-bg: #1e3a8a;
+            --section-5-bg: #2d3047;
+            --section-6-bg: #312244;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --font-size-small: 14px;     /* 小号字体 */
+            --font-size-regular: 16px;   /* 正常字体 */
+            --font-size-medium: 18px;    /* 中等字体 */
+            --font-size-large: 20px;     /* 大号字体 */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            overflow-x: hidden;
+            line-height: 1.7;
+            font-size: var(--font-size-regular);
+        }
+        
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            background: radial-gradient(circle at 50% 50%, rgba(66, 133, 244, 0.15), rgba(0, 0, 0, 0.7));
+        }
+        
+        .content {
+            text-align: center;
+            max-width: 840px;
+            animation: fadeIn 1.2s ease-in-out;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(26, 26, 46, 0.8);    /* 增加不透明度使背景更明显 */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(66, 133, 244, 0.2);  /* 添加边框增强层次感 */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 24px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(66, 133, 244, 0.3);
+            animation: glow 3s infinite alternate;
+            letter-spacing: -0.5px;
+            font-weight: 800;
+        }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(66, 133, 244, 0.3); }
+            100% { text-shadow: 0 0 25px rgba(52, 168, 83, 0.7); }
+        }
+        
+        h2 {
+            color: var(--light-text);
+            font-weight: 600;
+            margin-bottom: 28px;
+            letter-spacing: 0.5px;
+            font-size: 28px;  /* 统一二级标题大小 */
+        }
+        
+        h3 {
+            font-size: 22px;  /* 统一三级标题大小 */
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: var(--font-size-large);  /* 使用变量统一段落字体大小 */
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.4);
+            border: none;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+        }
+        
+        .button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 28px rgba(66, 133, 244, 0.5);
+        }
+        
+        .button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.5s;
+        }
+        
+        .button:hover::after {
+            left: 100%;
+        }
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--dark-bg), #090920);
+            z-index: -1;
+        }
+        
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.2;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-1000px) rotate(720deg); }
+        }
+        
+        .arrow-down {
+            position: absolute;
+            bottom: 30px;
+            cursor: pointer;
+            font-size: 36px;
+            color: var(--secondary-color);
+            animation: bounce 2s infinite;
+            transition: color 0.3s ease;
+        }
+        
+        .arrow-down:hover {
+            color: var(--primary-color);
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        
+        /* 增强区块样式 */
+        .markdown-content {
+            padding: 50px;
+            background-color: var(--medium-bg);  /* 使用变量确保颜色区分 */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 900px;
+            border: 1px solid rgba(66, 133, 244, 0.15);
+            backdrop-filter: blur(12px);
+        }
+        
+        .markdown-content h2 {
+            font-size: 32px;  /* 一致的二级标题大小 */
+            margin-top: 20px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--secondary-color);
+            letter-spacing: 0.5px;
+        }
+        
+        .section-container {
+            margin: 50px 0;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            transform: translateZ(0);
+            transition: all 0.4s ease;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .section-container:hover {
+            transform: translateY(-7px) translateZ(0);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+        }
+        
+        /* 确保各部分背景颜色有足够区分 */
+        .section-1 { background-color: var(--section-1-bg); }
+        .section-2 { background-color: var(--section-2-bg); }
+        .section-3 { background-color: var(--section-3-bg); }
+        .section-4 { background-color: var(--section-4-bg); }
+        .section-5 { background-color: var(--section-5-bg); }
+        .section-6 { background-color: var(--section-6-bg); }
+        
+        /* 统一列表项字体大小 */
+        ul, ol {
+            font-size: var(--font-size-medium);
+            padding-left: 25px;
+            margin-bottom: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Gemini API关键词高亮 */
+        .keyword-highlight {
+            font-weight: bold;
+            background: linear-gradient(90deg, rgba(66, 133, 244, 0.15), rgba(52, 168, 83, 0.05));
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            padding: 0 10px;
+            border-radius: 4px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+        
+        /* 表格优化 */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 30px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 18px;
+            text-align: left;
+            font-weight: bold;
+            font-size: var(--font-size-medium);  /* 统一表头字体大小 */
+        }
+        
+        .comparison-table td {
+            padding: 15px 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            font-size: var(--font-size-regular);  /* 统一表格内容字体大小 */
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .comparison-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.07);
+        }
+        
+        /* 特性卡片 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
+        }
+        
+        .feature-card {
+            background: var(--light-bg);  /* 使用较浅的背景色增强层次感 */
+            border-radius: 16px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            border-color: var(--secondary-color);
+            background: linear-gradient(145deg, var(--light-bg), rgba(52, 168, 83, 0.05));
+        }
+        
+        .feature-icon {
+            font-size: 46px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.2);
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;  /* 统一卡片标题大小 */
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            font-size: var(--font-size-regular);  /* 统一卡片内容字体大小 */
+            margin-bottom: 0;
+        }
+        
+        /* 代码区块优化 */
+        pre {
+            background-color: #1c1c2e;
+            padding: 22px;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 25px 0;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            color: #e6e6e6;
+            font-size: var(--font-size-regular);  /* 统一代码字体大小 */
+        }
+        
+        /* 链接样式优化 */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px dotted var(--secondary-color);
+        }
+        
+        a:hover {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--accent-color);
+        }
+        
+        /* 增强移动端体验 */
+        @media screen and (max-width: 767px) {
+            .container {
+                min-height: auto;
+                padding-top: 80px;
+                padding-bottom: 50px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 24px;  /* 移动端统一二级标题大小 */
+            }
+            
+            h3 {
+                font-size: 20px;  /* 移动端统一三级标题大小 */
+            }
+            
+            p {
+                font-size: var(--font-size-medium);  /* 移动端统一段落字体大小 */
+            }
+            
+            .section-container {
+                padding: 24px;
+                margin: 24px 0;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            pre {
+                padding: 15px;
+            }
+            
+            .markdown-content {
+                padding: 25px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            ul, ol {
+                font-size: var(--font-size-regular);  /* 移动端统一列表字体大小 */
+                padding-left: 20px;
+            }
+        }
+        
+        /* 加载动画 */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+        
+        .loader-content {
+            width: 80px;
+            height: 80px;
+            border: 5px solid rgba(66, 133, 244, 0.2);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="particles">
+            <!-- 将由JS生成粒子 -->
+        </div>
+        <div class="content">
+            <h1>Google Gemini API</span> - 2025国内领先服务</h1>
+            <h2>一站接入Google最强大生成式AI模型的专业API服务</span></h2>
+            <p>🚀 <strong>国内直连稳定</strong> | ⚡ <strong>低至50ms延迟</strong> | 💰 <strong>多语言开发支持</strong></p>
+            <a href="https://jeniya.cn/" target="_self" class="button">免费注册领取Gemini API额度</a>
+            <h3>实时更新：<strong id="curdate"></strong></h3>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️ 了解更多Gemini API服务</div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content" id="more-content">
+        <h2><span class="keyword-highlight">Gemini API</span>专业指南 - 2025年最新</h2>
+        
+        <p>在AI快速发展的今天，<strong>访问Google强大的Gemini大模型API</strong>成为开发者的核心需求。<span class="keyword-highlight"><a href="https://jeniya.cn/">简易 API</a></span>专为解决国内开发者Gemini API调用难题而生，提供<strong>稳定、低延迟、易用</strong>的专业服务。</p>
+        
+        <div class="section-container section-1">
+            <h2>什么是<span class="keyword-highlight">Gemini API</span>？为什么您需要它？</h2>
+            <p><span class="keyword-highlight">Gemini API</span>是Google推出的最新最强大的生成式AI模型接口，解决了多模态理解、自然语言处理、代码生成等核心AI需求。</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>国内直连无障碍</h3>
+                    <p>无需科学上网工具，API请求延迟低至50ms，稳定可靠的连接服务</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>全系Gemini模型支持</h3>
+                    <p>支持Gemini 1.5 Pro、Gemini 1.5 Flash等所有最新Google AI模型</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>多语言SDK支持</h3>
+                    <p>提供Python、Node.js、Java等多种编程语言SDK，快速集成到您的项目</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container section-2">
+            <h2>2025年<span class="keyword-highlight">Gemini API</span>与其他模型完整对比</h2>
+            
+            <table class="comparison-table">
+                <tr>
+                    <th>AI模型特性</th>
+                    <th>Gemini 1.5 Pro</th>
+                    <th>GPT-4o</th>
+                    <th>Claude 3.5</th>
+                </tr>
+                <tr>
+                    <td><strong>上下文窗口</strong></td>
+                    <td>100万tokens</td>
+                    <td>12.8万tokens</td>
+                    <td>20万tokens</td>
+                </tr>
+                <tr>
+                    <td><strong>多模态处理</strong></td>
+                    <td>图像/视频/音频/文本</td>
+                    <td>图像/文本</td>
+                    <td>图像/文本</td>
+                </tr>
+                <tr>
+                    <td><strong>代码能力</strong></td>
+                    <td>极强</td>
+                    <td>很强</td>
+                    <td>较强</td>
+                </tr>
+                <tr>
+                    <td><strong>价格优势</strong></td>
+                    <td>最佳性价比</td>
+                    <td>较高价格</td>
+                    <td>中等价格</td>
+                </tr>
+                <tr>
+                    <td><strong>响应速度</strong></td>
+                    <td>极快</td>
+                    <td>快速</td>
+                    <td>中等</td>
+                </tr>
+                <tr>
+                    <td><strong>通过API访问</strong></td>
+                    <td><a href="https://jeniya.cn/">简易API提供稳定访问</td>
+                    <td>需国际支付方式</td>
+                    <td>需国际支付方式</td>
+                </tr>
+            </table>
+            
+            <p><strong>数据来源：</strong>基于2025年3月对主要大语言模型的综合评测</p>
+        </div>
+
+        <div class="section-container section-3">
+            <h2><span class="keyword-highlight">Gemini API</span>核心技术揭秘</h2>
+            
+            <p>Google的Gemini模型采用了创新的混合专家架构和多模态预训练技术：</p>
+            
+            <ul>
+                <li><strong>Mixture of Experts架构</strong> - 使模型能够处理更长的上下文，同时保持高效推理</li>
+                <li><strong>多模态理解</strong> - 无缝理解图像、视频、音频和文本内容之间的关系</li>
+                <li><strong>100万tokens超长上下文</strong> - 能处理超过3000页PDF或数小时视频内容</li>
+                <li><strong>先进的代码理解能力</strong> - 可分析和生成复杂代码，支持多种编程语言</li>
+            </ul>
+            
+            <p>这些技术使<span class="keyword-highlight">Gemini API</span>成为目前市场上功能最全面、性能最强大的AI模型之一。</p>
+        </div>
+
+        <div class="section-container section-4">
+            <h2>如何使用<span class="keyword-highlight">Gemini API</span>？5分钟快速上手</h2>
+            
+            <ol>
+                <li><strong>注册账户</strong> - 访问<a href="https://jeniya.cn/" target="_blank">简易 API官网</a>完成简单注册</li>
+                <li><strong>获取API密钥</strong> - 在控制台创建并复制您的API Key</li>
+                <li><strong>选择合适的模型</strong> - 根据需求选择Gemini 1.5 Pro或Gemini 1.5 Flash</li>
+                <li><strong>开始集成</strong> - 使用我们提供的SDK快速集成到您的应用</li>
+            </ol>
+            
+            <h3>Gemini API调用示例（Python，更新于2025年）</h3>
+            <pre><code>
+import requests
+
+API_KEY = "您的<a href="https://jeniya.cn/">简易API密钥"
+API_URL = "https://api.jeniya.cn/v1/genai/generateContent"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "model": "gemini-1.5-pro",  # 使用最新的Gemini 1.5 Pro模型
+    "contents": [
+        {
+            "role": "user",
+            "parts": [
+                {"text": "请解释Gemini API的多模态能力及其应用场景"}
+            ]
+        }
+    ],
+    "generationConfig": {
+        "temperature": 0.7,
+        "maxOutputTokens": 800
+    }
+}
+
+response = requests.post(API_URL, headers=headers, json=data)
+print(response.json())
+            </code></pre>
+        </div>
+
+        <div class="section-container section-5">
+            <h2><span class="keyword-highlight">Gemini API</span>应用场景分析</h2>
+            
+            <p>以下行业和应用场景中，<span class="keyword-highlight">Gemini API</span>展现出显著优势：</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>企业智能助手</h3>
+                    <p>利用百万级上下文窗口处理企业文档，构建知识库和智能问答系统</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>多模态应用开发</h3>
+                    <p>同时处理图像、视频和文本的应用，如内容审核、视频理解与分析</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>先进代码生成</h3>
+                    <p>为开发者提供智能代码补全、代码转换和软件开发辅助工具</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3>教育与研究应用</h3>
+                    <p>处理大量学术文献，生成研究摘要，辅助科研和教学工作</p>
+                </div>
+            </div>
+            
+            <p><strong>行业案例：</strong>某金融科技公司使用Gemini API构建了能够分析季度财报、投资者电话会议记录和市场新闻的AI分析师，将财务分析效率提升了300%。</p>
+        </div>
+
+        <div class="section-container section-6">
+            <h2>为什么选择我们的<span class="keyword-highlight"><a href="https://jeniya.cn/">Gemini API</span>服务？</h2>
+            
+            <p>作为国内领先的<span class="keyword-highlight">Gemini API</span>服务提供商，简易API凭借以下优势成为开发者的首选：</p>
+            
+            <ul>
+                <li><strong>全系列模型支持</strong> - 提供Gemini 1.5 Pro、Gemini 1.5 Flash等所有Google AI模型</li>
+                <li><strong>稳定可靠的连接</strong> - 独创智能路由和请求优化技术，确保API调用稳定性</li>
+                <li><strong>多语言SDK支持</strong> - 提供Python、Node.js、Java等多种语言SDK，简化开发</li>
+                <li><strong>简单的计费系统</strong> - 按量计费，透明定价，无隐藏费用</li>
+                <li><strong>技术支持服务</strong> - 提供中文技术文档和7×24小时中文技术支持</li>
+            </ul>
+            
+            <p>立即访问<a href="https://jeniya.cn/" target="_blank" class="keyword-highlight">简易API官网</a>，开启AI开发新时代！注册即送100元Gemini API调用额度，无需信用卡，5分钟内完成接入。</p>
+            
+            <p>最后更新时间: <strong id="update-time">2025年3月</strong></p>
+        </div>
+    </section>
+
+    <script>
+        // 创建粒子背景
+        function createParticles() {
+            const particles = document.querySelector('.particles');
+            const particleCount = window.innerWidth > 768 ? 50 : 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // 随机大小
+                const size = Math.random() * 5 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // 随机位置
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                
+                // 随机动画延迟和持续时间
+                const delay = Math.random() * 10;
+                const duration = Math.random() * 20 + 10;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                
+                particles.appendChild(particle);
+            }
+        }
+        
+        // 加载页面后运行
+        window.addEventListener('DOMContentLoaded', () => {
+            // 添加加载动画
+            const loader = document.createElement('div');
+            loader.classList.add('loader');
+            const loaderContent = document.createElement('div');
+            loaderContent.classList.add('loader-content');
+            loader.appendChild(loaderContent);
+            document.body.appendChild(loader);
+            
+            // 创建粒子
+            createParticles();
+            
+            // 更新日期
+            const updateCurrentDate = () => {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                
+                document.getElementById('curdate').textContent = `${year}/${month}/${day}`;
+                document.getElementById('update-time').textContent = `${year}年${month}月${day}日`;
+            };
+            
+            updateCurrentDate();
+            
+            // 隐藏加载动画
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }, 1000);
+        });
+        
+        // 平滑滚动
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // 添加结构化数据，提升SEO
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "简易 API - Gemini API服务",
+            "url": "https://jeniya.cn/",
+            "description": "专业Google Gemini API服务，提供Gemini 1.5 Pro、Gemini 1.5 Flash等AI大模型API接口。",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://jeniya.cn/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
